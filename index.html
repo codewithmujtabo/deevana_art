@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesom Link CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Font: EB Garamond & Great Vibes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Favicon Logo  -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.svg" />
+
+    <!-- Link Style CSS  -->
+    <link rel="stylesheet" href="./assets/css/output.css" />
+
+    <!-- Website Title  -->
+    <title>Deevana Art</title>
+  </head>
+  <body class="font-ibm">
+    <header
+      class="py-4 container w-full mx-auto px-4 lg:px-10 flex items-center justify-between bg-black">
+      <!-- Logo  -->
+      <div>
+        <p class="font-great-vibes text-xl lg:text-4xl text-red-800">
+          <a href="#">Deevana Art</a>
+        </p>
+      </div>
+
+      <div class="flex items-center">
+        <button
+          id="hamburger"
+          name="hamburger"
+          type="button"
+          class="block absolute right-4 lg:hidden">
+          <span
+            class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+          <span
+            class="hamburger-line transition duration-300 ease-in-out"></span>
+          <span
+            class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+        </button>
+
+        <!-- Navbar Menu  -->
+        <nav
+          id="nav-menu"
+          class="h-[91%] hidden absolute align-center bg-black top-10 right-0 lg:top-0 lg:bg-transparent lg:relative lg:flex lg:items-center mt-4 lg:mt-0">
+          <ul class="block lg:flex">
+            <li
+              class="text-[20px] ml-5 mb-4 lg:mb-0 text-gray-50 mr-10 hover:text-gray-600 transition-all duration-100">
+              <a href="#home">HOME</a>
+            </li>
+            <li
+              class="text-[20px] ml-5 mb-4 lg:mb-0 text-gray-50 mr-10 hover:text-gray-600 transition-all duration-100">
+              <a href="./wedding-planning.html">WEDDING PLANNING</a>
+            </li>
+            <li
+              class="text-[20px] ml-5 mb-4 lg:mb-0 text-gray-50 mr-10 hover:text-gray-600 transition-all duration-100">
+              <a href="./real-weddings.html">REAL WEDDINGS</a>
+            </li>
+          </ul>
+          <button
+            class="ml-5 lg:ml-0 border-2 lg:border-gray-50 py-2 px-5 text-gray-50 hover:text-black hover:bg-gray-50 transition-all duration-300">
+            CONTACT US
+          </button>
+        </nav>
+      </div>
+    </header>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
