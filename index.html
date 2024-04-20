@@ -32,7 +32,7 @@
       <!-- Logo  -->
       <div>
         <p class="font-great-vibes text-xl lg:text-4xl text-red-800">
-          <a href="#">Deevana Art</a>
+          <a href="#home">Deevana Art</a>
         </p>
       </div>
 
@@ -53,7 +53,7 @@
         <!-- Navbar Menu  -->
         <nav
           id="nav-menu"
-          class="h-[91%] hidden absolute align-center bg-black top-10 right-0 lg:top-0 lg:bg-transparent lg:relative lg:flex lg:items-center mt-4 lg:mt-0">
+          class="z-40 hidden absolute align-center bg-black top-10 right-0 lg:top-0 lg:bg-transparent lg:relative lg:flex lg:items-center mt-4 lg:mt-0 py-5 lg:py-0">
           <ul class="block lg:flex">
             <li
               class="text-[20px] ml-5 mb-4 lg:mb-0 text-gray-50 mr-10 hover:text-gray-600 transition-all duration-100">
@@ -75,6 +75,86 @@
         </nav>
       </div>
     </header>
+
+    <main id="home" class="container px-6 overflow-hidden">
+      <h2 class="text-xl font-great-vibes text-center lg:text-3xl pt-16">
+        What’s HOT?
+      </h2>
+
+      <!-- Carousel  -->
+      <div class="slider">
+        <div class="list">
+          <div class="item">
+            <img src="./assets/images/carousel_1.png" />
+          </div>
+          <div class="item">
+            <img src="./assets/images/carousel_2.png" />
+          </div>
+          <div class="item">
+            <img src="./assets/images/carousel_3.png" />
+          </div>
+          <div class="item">
+            <img src="./assets/images/carousel_4.png" />
+          </div>
+        </div>
+
+        <!-- button prev and next  -->
+        <div class="buttons">
+          <button id="prev"><</button>
+          <button id="next">></button>
+        </div>
+
+        <!-- dots -->
+        <ul class="dots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
+      <!-- Top Venues  -->
+      <button
+        class="flex border-2 border-black my-10 py-3 px-5 mx-auto hover:text-white hover:bg-black transition-all duration-150">
+        See More Top Venues
+      </button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam ab,
+        eius suscipit dolorem libero officiis consectetur accusamus delectus
+        molestias provident officia nemo voluptatibus necessitatibus non
+        voluptatem qui asperiores dolorum dolore quaerat at! Architecto possimus
+        minus explicabo quod corporis nostrum similique temporibus maxime natus
+        molestiae esse nesciunt optio facilis iure in voluptatem obcaecati
+        laborum aspernatur qui, expedita quis ipsum! Ab, temporibus. Non
+        cupiditate deleniti doloremque, in minus eos consequatur facere atque
+        reprehenderit vel amet, necessitatibus molestias? Minima voluptatum,
+        nisi nobis neque sed consequatur delectus doloremque consequuntur est
+        obcaecati, laudantium quia quidem quae quisquam. Dicta voluptate dolorum
+        eaque aperiam voluptas magnam, excepturi, inventore impedit qui ipsam
+        obcaecati error magni neque blanditiis. Dolores temporibus quidem
+        deleniti perferendis itaque at cum eos. Id, eum rem, minus voluptas quos
+        odit placeat deserunt optio molestiae atque natus quasi aspernatur
+        expedita totam consequuntur in dolores magni unde necessitatibus
+        voluptatum. Obcaecati debitis ad beatae veniam omnis eum exercitationem
+        quae consequuntur vitae, assumenda inventore culpa ab sint atque
+        voluptate ex? Veritatis dignissimos facilis reiciendis tempore
+        praesentium. Facere accusantium cumque sequi dicta, culpa accusamus ab
+        incidunt beatae consequuntur distinctio tenetur. Quod deleniti dolore
+        tenetur dolorem doloribus optio provident incidunt eos perspiciatis
+        obcaecati necessitatibus labore sit dolores beatae sequi, modi
+        accusantium.
+      </p>
+    </main>
+    <!-- Back to Top Start -->
+    <a
+      href="#home"
+      class="fixed bottom-4 right-4 z-[9999] hidden h-7 w-7 lg:h-14 lg:w-14 justify-center items-center rounded-full bg-black p-4 hover:animate-pulse"
+      id="to-top">
+      <span class="block">
+        <i class="fa-solid fa-chevron-up text-white"></i>
+      </span>
+    </a>
+    <!-- Back to Top End -->
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
