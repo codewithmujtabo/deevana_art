@@ -1,3 +1,27 @@
+/*===== MENU SHOW =====*/
+const showMenu = (toggleId, navId) => {
+  const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId);
+
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+  }
+};
+showMenu("nav-toggle", "nav-menu");
+
+/*==================== REMOVE MENU MOBILE ====================*/
+const navLink = document.querySelectorAll(".nav__link");
+
+function linkAction() {
+  const navMenu = document.getElementById("nav-menu");
+  // When we click on each nav__link, we remove the show-menu class
+  navMenu.classList.remove("show");
+  navLink.classList.add("nav__active");
+}
+navLink.forEach((n) => n.addEventListener("click", linkAction));
+
 //Navbar Fixed
 window.onscroll = function () {
   const header = document.querySelector("header");
@@ -15,23 +39,7 @@ window.onscroll = function () {
   }
 };
 
-// Hamburger
-const hamburger = document.querySelector("#hamburger");
-const navMenu = document.querySelector("#nav-menu");
-
-hamburger.addEventListener("click", function () {
-  hamburger.classList.toggle("hamburger-active");
-  navMenu.classList.toggle("hidden");
-});
-
-// Click out of humburger
-window.addEventListener("click", function (e) {
-  if (e.target != hamburger && e.target != navMenu) {
-    hamburger.classList.remove("hamburger-active");
-    navMenu.classList.add("hidden");
-  }
-});
-
+/*==================== Carousel ====================*/
 let list = document.querySelector(".slider .list");
 let items = document.querySelectorAll(".slider .list .item");
 let dots = document.querySelectorAll(".slider .dots li");
