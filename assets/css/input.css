@@ -15,7 +15,7 @@ html {
 
 /*===== LAYOUT =====*/
 .bd-grid {
-  max-width: 1024px;
+  /* max-width: 1024px; */
   display: grid;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -222,7 +222,7 @@ html {
 
   .list img {
     width: 500px;
-  } 
+  }
 }
 
 @media screen and (max-width: 768px) {
