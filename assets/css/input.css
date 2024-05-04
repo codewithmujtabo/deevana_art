@@ -105,7 +105,7 @@ html {
 
 @media screen and (min-width: 768px) {
   .nav {
-    height: 4.5rem;
+    height: 5.5rem;
   }
   .nav__list {
     display: flex;
