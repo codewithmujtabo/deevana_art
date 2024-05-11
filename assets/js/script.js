@@ -8,11 +8,21 @@ const showMenu = (toggleId, navId) => {
       nav.classList.toggle("show");
     });
   }
+  // window.addEventListener("click", function (e) {
+  //   if (e.target != toggle && e.target != nav) {
+  //     // hamburger.classList.remove("hamburger-active");
+  //     // navMenu.classList.add("hidden");
+  //     nav.classList.toggle("show");
+  //     // showMenu("nav-toggle", "nav-menu");
+  //   }
+  // });
 };
+
 showMenu("nav-toggle", "nav-menu");
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll(".nav__link");
+// const navMenu = documen.querySelector("#nav-menu");
 
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
