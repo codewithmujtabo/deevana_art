@@ -7,15 +7,13 @@ const showMenu = (toggleId, navId) => {
     toggle.addEventListener("click", () => {
       nav.classList.toggle("show");
     });
+
+    document.addEventListener("click", (e) => {
+      if (!toggle.contains(e.target) && !nav.contains(e.target)) {
+        nav.classList.remove("show");
+      }
+    });
   }
-  // window.addEventListener("click", function (e) {
-  //   if (e.target != toggle && e.target != nav) {
-  //     // hamburger.classList.remove("hamburger-active");
-  //     // navMenu.classList.add("hidden");
-  //     nav.classList.toggle("show");
-  //     // showMenu("nav-toggle", "nav-menu");
-  //   }
-  // });
 };
 
 showMenu("nav-toggle", "nav-menu");
@@ -52,7 +50,6 @@ window.onscroll = function () {
 /*==================== Carousel ====================*/
 let list = document.querySelector(".slider .list");
 let items = document.querySelectorAll(".slider .list .item");
-let dots = document.querySelectorAll(".slider .dots li");
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
 
@@ -93,10 +90,3 @@ function reloadSlider() {
     next.click();
   }, 5000);
 }
-
-dots.forEach((li, key) => {
-  li.addEventListener("click", function () {
-    active = key;
-    reloadSlider();
-  });
-});

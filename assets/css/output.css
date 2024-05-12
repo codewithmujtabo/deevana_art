@@ -745,6 +745,22 @@ video {
   margin-top: 2rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -773,36 +789,16 @@ video {
   height: 1.75rem;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
 .h-\[2px\] {
   height: 2px;
 }
 
 .h-auto {
   height: auto;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[150px\] {
-  height: 150px;
-}
-
-.h-\[200px\] {
-  height: 200px;
-}
-
-.h-\[200pz\] {
-  height: 200pz;
-}
-
-.h-\[2\] {
-  height: 2;
 }
 
 .w-10 {
@@ -939,10 +935,6 @@ video {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-\[\#e0e0e0\] {
   --tw-border-opacity: 1;
   border-color: rgb(224 224 224 / var(--tw-border-opacity));
@@ -950,11 +942,6 @@ video {
 
 .border-transparent {
   border-color: transparent;
-}
-
-.border-\[\#0d1730\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(13 23 48 / var(--tw-border-opacity));
 }
 
 .bg-\[\#0d1730\] {
@@ -1052,6 +1039,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1075,11 +1067,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .pb-0 {
@@ -1205,11 +1192,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-blue-700 {
-  --tw-text-opacity: 1;
-  color: rgb(29 78 216 / var(--tw-text-opacity));
-}
-
 .no-underline {
   text-decoration-line: none;
 }
@@ -1250,10 +1232,6 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
-}
-
-.duration-150 {
-  transition-duration: 150ms;
 }
 
 /*===== BASE =====*/
@@ -1546,11 +1524,6 @@ html {
   background-color: #a91079e2;
 }
 
-.hover\:bg-\[\#0d1730\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(13 23 48 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-opacity-90:hover {
   --tw-bg-opacity: 0.9;
 }
@@ -1558,11 +1531,6 @@ html {
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -1655,10 +1623,6 @@ html {
 
   .md\:flex {
     display: flex;
-  }
-
-  .md\:h-\[200px\] {
-    height: 200px;
   }
 
   .md\:w-1\/2 {
