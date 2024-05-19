@@ -864,6 +864,10 @@ video {
   width: 24rem;
 }
 
+.w-72 {
+  width: 18rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -1735,6 +1739,10 @@ html {
 
   .lg\:w-\[500px\] {
     width: 500px;
+  }
+
+  .lg\:w-96 {
+    width: 24rem;
   }
 
   .lg\:rounded-lg {
